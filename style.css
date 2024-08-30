@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #27272a;
+}
+
+form {
+    width: 400px;
+    height: 400px;
+    background-color: #27272a;
+    border-radius: 7px;
+    border: 1px solid #0866FF;
+    transition: .6s all ease-in-out;
+}
+
+form .logo {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+form .logo h1::before {
+    border-bottom: 1px solid #0866FF;
+    height: 5px;
+    width: 30px;
+}
+
+form .logo h1 {
+    color: white;
+    font-family: 'poppins';
+    font-weight: 300;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form:hover {
+    box-shadow: 4px 4px 15px rgb(0, 204, 255), 4px 4px 15px rgb(0, 204, 255) ;
+}
+
+form:hover .inputs input {
+    box-shadow: 4px 0 15px rgb(0, 204, 255), 4px 0 15px rgb(0, 204, 255) ;
+}
+
+.inputs input {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #0866FF;
+    padding-right: 90px;
+    border-radius: 50px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'poppins';
+    transition: .5s;
+}
+
+.inputs input::placeholder {
+    color: white;
+}
+
+.wrapper {
+    text-align: left;
+    width: 100%;
+    margin-left: 130px;
+    color: white;
+    font-family: 'poppins';
+    font-size: 14px;
+}
+
+.wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+.button-login button {
+    padding: 10px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 600;
+    background-color: #0866FF;
+    color: white;
+    cursor: pointer;
+}
+
+.whats {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    border: 1px solid #0866FF;
+    border-radius: 20px;
+    transition: all ease-in-out .5s;
+}
+
+.whats img {
+    width: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.whats:hover {
+    box-shadow: 4px 0 15px rgb(0, 204, 255), 4px 0 15px rgb(0, 204, 255);
+}
+
+@media screen and (max-width: 400px) {
+   
+}
